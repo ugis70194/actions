@@ -1,12 +1,13 @@
 on: [push]
 
 jobs:
-  componen_auto_generetor:
+  component_auto_generetor:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Hello world action step
-        uses: ugis70194/actions@v1.2
+      - name: component auto generetor
+        id: generete
+        uses: ugis70194/actions@v1.3
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "The time was ${{ steps.generete.outputs.time }}"
