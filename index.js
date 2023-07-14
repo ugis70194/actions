@@ -1,15 +1,16 @@
 const { Toolkit } = require('actions-toolkit');
 const fs = require('fs');
 
-const targetDir = process.env.GITHUB_WORKSPACE + "/contents";
+const targetDir = process.env.GITHUB_WORKSPACE;
 
 Toolkit.run(async tools => {
   console.log(targetDir);
   try {
     fs.readdir(targetDir, (err, files) => {
-        files.forEach(file => {
-            console.log(file);
-        });
+      console.log(files);
+        //files.forEach(file => {
+        //    console.log(file);
+        //});
     });
   } catch (e) {
     tools.log.fatal(e);
