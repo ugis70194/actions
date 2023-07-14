@@ -6,7 +6,7 @@ jobs:
     name: A job to say hello
     steps:
       - name: Hello world action step
-        uses: ugis70194/actions@v1.1
+        uses: ugis70194/actions@v1.2
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
