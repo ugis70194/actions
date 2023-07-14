@@ -7,7 +7,4 @@ jobs:
     steps:
       - name: component auto generetor
         id: generete
-        uses: ugis70194/actions@v1.3
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.generete.outputs.time }}"
+        uses: ugis70194/actions@v1.4
