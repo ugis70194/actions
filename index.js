@@ -1,7 +1,7 @@
 const { Toolkit } = require('actions-toolkit');
 const fs = require('fs');
 
-const targetDir = process.env.GITHUB_WORKSPACE+"/contents";
+const targetDir = process.env.GITHUB_WORKSPACE;
 
 Toolkit.run(async tools => {
   console.log(targetDir);
