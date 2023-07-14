@@ -8,6 +8,7 @@ Toolkit.run(async tools => {
   try {
     fs.readdir(targetDir, (err, files) => {
       console.log(files);
+      //
         //files.forEach(file => {
         //    console.log(file);
         //});
