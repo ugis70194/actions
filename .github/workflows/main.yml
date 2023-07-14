@@ -3,8 +3,8 @@ on: [push]
 jobs:
   component_auto_generetor:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: auto gen
     steps:
       - name: component auto generetor
         id: generete
-        uses: ugis70194/actions@v1.4
+        uses: ugis70194/actions@v1.5
