@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: component auto generetor
         id: generete
-        uses: ugis70194/actions@v1.5
+        uses: ugis70194/actions@v1.6
